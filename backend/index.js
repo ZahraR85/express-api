@@ -4,8 +4,10 @@ import userRouter from './routers/userRouter.js';
 import productRouter from './routers/productRouter.js';
 import categoryRouter from './routers/categoryRouter.js';
 import orderRouter from './routers/orderRouter.js';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 // Test DB connection
