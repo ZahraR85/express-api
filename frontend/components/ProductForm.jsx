@@ -49,7 +49,8 @@ const ProductForm = ({ selectedProduct, onSave }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4">
+    <div className="flex justify-center ">
+    <form onSubmit={handleSubmit} className="p-4 mb-4 bg-gray-500 w-2/3 rounded">
       <input
         type="text"
         value={name}
@@ -77,10 +78,11 @@ const ProductForm = ({ selectedProduct, onSave }) => {
         placeholder="Category ID"
         className="border p-2 w-full mb-2"
       />
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2">
+      <button type="submit" className="bg-orange-300 text-black font-bold px-4 py-2 w-full">
         {selectedProduct ? 'Update Product' : 'Add Product'}
       </button>
     </form>
+    </div>
   );
 };
 
