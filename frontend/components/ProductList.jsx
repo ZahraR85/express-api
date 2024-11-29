@@ -51,7 +51,7 @@ const ProductList = ({ onEdit }) => {
                 <div className="flex gap-2">
                   <button
                     onClick={() => onEdit(product)}
-                    className="bg-green-800 text-white font-bold px-5 py-1 rounded"
+                    className="bg-green-800 text-white font-bold px-5 py-1 mr-1 rounded"
                   >
                     Edit
                   </button>

@@ -29,8 +29,9 @@ const UserList = ({ onEdit }) => {
   };
 
   return (
-    <div>
-      <h2 className="text-xl font-bold">User List</h2>
+    <div className="card bg-gray-300 text-black w-full max-w-xl mx-auto shadow-xl">
+      <div className="card-body">
+      <h2 className="text-xl font-bold m-5">User List</h2>
       <ul>
         {users.length > 0 ? (
           users.map((user) => (
@@ -42,13 +43,13 @@ const UserList = ({ onEdit }) => {
               <div>
                 <button
                   onClick={() => onEdit(user)}
-                  className="bg-gray-500 text-white px-2 py-1 rounded mr-2"
+                  className="bg-green-800 text-white font-bold px-5 py-1 mr-2 rounded"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => handleDelete(user.id)}
-                  className="bg-red-500 text-white px-2 py-1 rounded"
+                  className="bg-red-500 text-white font-bold px-5 py-1 rounded"
                 >
                   Delete
                 </button>
@@ -59,6 +60,7 @@ const UserList = ({ onEdit }) => {
           <p>No users available.</p>
         )}
       </ul>
+    </div>
     </div>
   );
 };

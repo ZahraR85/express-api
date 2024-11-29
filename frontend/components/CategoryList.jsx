@@ -41,7 +41,7 @@ const CategoryList = ({ onEdit }) => {
               <div>
                 <button
                   onClick={() => onEdit(category)}
-                  className="bg-green-800 text-white font-bold px-5 py-1 rounded"
+                  className="bg-green-800 text-white font-bold px-5 py-1 mr-2 rounded"
                 >
                   Edit
                 </button>
