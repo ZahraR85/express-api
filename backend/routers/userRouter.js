@@ -9,10 +9,10 @@ import {
 
 const router = express.Router();
 
-router.post('/', createUser);          // CREATE
-router.get('/', getUsers);             // READ (all users)
-router.get('/:id', getUserById);       // READ (user by ID)
-router.put('/:id', updateUser);        // UPDATE
-router.delete('/:id', deleteUser);     // DELETE
+router.post('/', createUser);          
+router.get('/', getUsers);          
+router.get('/:id', getUserById);     
+router.put('/:id', updateUser);      
+router.delete('/:id', deleteUser);  
 
 export default router;

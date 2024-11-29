@@ -10,10 +10,10 @@ import {
 const router = express.Router();
 
 // CRUD routes for products
-router.get('/', getProducts); // GET /products
-router.post('/', createProduct); // POST /products
-router.get('/:id', getProductById); // GET /products/:id
-router.put('/:id', updateProduct); // PUT /products/:id
-router.delete('/:id', deleteProduct); // DELETE /products/:id
+router.get('/', getProducts); 
+router.post('/', createProduct); 
+router.get('/:id', getProductById); 
+router.put('/:id', updateProduct); 
+router.delete('/:id', deleteProduct); 
 
 export default router;
