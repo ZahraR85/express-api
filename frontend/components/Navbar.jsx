@@ -8,7 +8,7 @@ const Navbar = () => {
   const [dropdownOpen4, setDropdownOpen4] = useState(false);
 
   return (
-    <nav className="bg-custom-gradient p-6">
+    <nav className="bg-gray-700 p-6">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-white text-lg font-bold">
           My Store
@@ -28,7 +28,7 @@ const Navbar = () => {
               <div className="absolute mt-2 w-40 bg-custom-gradient rounded shadow-lg">
                 <Link
                   to="/products"
-                  className="block p-2 text-sm text-white hover:text-gray-900 hover:bg-gray-200"
+                  className="block p-2 text-sm text-white hover:text-gray-900 hover:bg-gray-300"
                   onClick={() => setDropdownOpen1(false)}
                 >
                   Manage Products
@@ -49,7 +49,7 @@ const Navbar = () => {
               <div className="absolute mt-2 w-40 bg-custom-gradient rounded shadow-lg">
                 <Link
                   to="/categories"
-                  className="block p-2 text-sm text-white hover:text-gray-900 hover:bg-gray-200"
+                  className="block p-2 text-sm text-white hover:text-gray-900 hover:bg-gray-300"
                   onClick={() => setDropdownOpen2(false)}
                 >
                   Manage Categories
@@ -70,7 +70,7 @@ const Navbar = () => {
               <div className="absolute mt-2 w-40 bg-custom-gradient rounded shadow-lg">
                 <Link
                   to="/orders"
-                  className="block p-2 text-sm text-white hover:text-gray-900 hover:bg-gray-200"
+                  className="block p-2 text-sm text-white hover:text-gray-900 hover:bg-gray-300"
                   onClick={() => setDropdownOpen3(false)}
                 >
                   Manage Orders
@@ -91,7 +91,7 @@ const Navbar = () => {
               <div className="absolute mt-2 w-40 bg-custom-gradient rounded shadow-lg">
                 <Link
                   to="/users"
-                  className="block p-2 text-sm text-white hover:text-gray-900 hover:bg-gray-200"
+                  className="block p-2 text-sm text-white hover:text-gray-900 hover:bg-gray-300"
                   onClick={() => setDropdownOpen4(false)}
                 >
                   Manage Users

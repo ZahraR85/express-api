@@ -10,10 +10,10 @@ import {
 const router = express.Router();
 
 // CRUD routes for categories
-router.get('/', getCategories); // GET /categories
-router.post('/', createCategory); // POST /categories
-router.get('/:id', getCategoryById); // GET /categories/:id
-router.put('/:id', updateCategory); // PUT /categories/:id
-router.delete('/:id', deleteCategory); // DELETE /categories/:id
+router.get('/', getCategories); 
+router.post('/', createCategory); 
+router.get('/:id', getCategoryById); 
+router.put('/:id', updateCategory); 
+router.delete('/:id', deleteCategory); 
 
 export default router;

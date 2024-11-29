@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Navbar from '../components/Navbar.jsx'
+import Navbar from '../components/Navbar.jsx';
 import Products from '../pages/Products.jsx';
 import Categories from '../pages/Categories.jsx';
 import Orders from '../pages/Orders.jsx';
