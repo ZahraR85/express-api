@@ -29,8 +29,8 @@ const CategoryList = ({ onEdit }) => {
   };
 
   return (
-    <div>
-      <h2 className="text-xl font-bold">Category List</h2>
+    <div className="card bg-gray-300 text-black w-full max-w-xl mx-auto shadow-xl">
+      <h2 className="text-xl font-bold text-center m-5">Category List</h2>
       <ul>
         {categories.length > 0 ? (
           categories.map((category) => (
@@ -41,13 +41,13 @@ const CategoryList = ({ onEdit }) => {
               <div>
                 <button
                   onClick={() => onEdit(category)}
-                  className="bg-gray-500 text-white px-2 py-1 rounded mr-2"
+                  className="bg-green-800 text-white font-bold px-5 py-1 rounded"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => handleDelete(category.id)}
-                  className="bg-red-500 text-white px-2 py-1 rounded"
+                  className="bg-red-500 text-white font-bold px-5 py-1 rounded"
                 >
                   Delete
                 </button>

@@ -78,7 +78,7 @@ const ProductForm = ({ selectedProduct, onSave }) => {
         placeholder="Category ID"
         className="border p-2 w-full mb-2"
       />
-      <button type="submit" className="bg-orange-300 text-black font-bold px-4 py-2 w-full">
+      <button type="submit" className="bg-orange-400 text-black font-bold px-4 py-2 w-full">
         {selectedProduct ? 'Update Product' : 'Add Product'}
       </button>
     </form>

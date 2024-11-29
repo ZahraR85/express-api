@@ -37,7 +37,7 @@ const ProductList = ({ onEdit }) => {
   return (
     <div className="card bg-gray-300 text-black w-full max-w-xl mx-auto shadow-xl">
       <div className="card-body">
-        <h2 className="text-xl font-bold text-center">Product List</h2>
+        <h2 className="text-xl font-bold text-center m-5">Product List</h2>
         <ul>
           {products.length > 0 ? (
             products.map((product) => (
@@ -57,7 +57,7 @@ const ProductList = ({ onEdit }) => {
                   </button>
                   <button
                     onClick={() => handleDelete(product.id)}
-                    className="bg-red-500 text-white font-bold px-5 py-1 rounded-full"
+                    className="bg-red-500 text-white font-bold px-5 py-1 rounded"
                   >
                     Delete
                   </button>
